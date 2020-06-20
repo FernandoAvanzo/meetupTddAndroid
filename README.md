@@ -1,7 +1,7 @@
 # Meetup Tdd Android
 ============================================================================
 
-Meetup com apresentando os conceitos sobre Teste Drive Development (TDD) as principais ferramentas utilizadas para contrução de testes de unidade automatizados em aplicativos mobile da plataforma android
+Meetup apresentando os principais conceitos sobre Teste Drive Development (TDD) e as ferramentas utilizadas para contrução de testes de unidade automatizados em aplicativos mobile da plataforma android
 
 Conteudo
 --------

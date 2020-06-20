@@ -5,5 +5,5 @@ Meetup com apresentando os conceitos sobre Teste Drive Development (TDD) as prin
 
 Conteudo
 --------
-O conteudo desse meetup foi baseda no Code Labs fornecido pelo google:
-*[Advanced Android in Kotlin: Welcome to the course]https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-welcome/#1
+O conteudo desse meetup foi basedo no Code Labs fornecido pelo google em:
+* [Advanced Android in Kotlin: Welcome to the course](https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-welcome/#1)

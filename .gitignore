@@ -1,2 +1,11 @@
 android-testing/.git
 android-testing/.github
+android-testing/.idea
+android-testing/*.iml
+android-testing/local.properties
+android-testing/build
+android-testing/.gradle
+# Eclipse project files
+android-testing/.project
+android-testing/.settings/	
+android-testing/.classpath

@@ -1,4 +1,19 @@
-\frametitle{Citation}
-An example of the \verb|\cite| command to cite within the presentation:\\~
-
-This statement requires citation \cite{p1}.
+\frametitle{Caso de Uso: ToDo App}
+	\begin{example}[Escrevendo o codigo funcional]
+		\begin{lstlisting}
+		internal fun getActiveAndCompletedStats(tasks: List<Task>?)
+		: StatsResult {
+			return if (tasks == null || tasks.isEmpty()) {
+				StatsResult(0f, 0f)
+			} else {
+				val totalTasks = tasks.size
+				val numberOfActiveTasks = tasks.count { it.isActive }
+				StatsResult(
+					activeTasksPercent = 100f *
+						 numberOfActiveTasks / tasks.size,
+					completedTasksPercent = 100f *
+						(totalTasks - numberOfActiveTasks) / tasks.size)
+			}
+		}
+		\end{lstlisting}
+	\end{example}

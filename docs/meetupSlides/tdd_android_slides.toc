@@ -1,0 +1,3 @@
+\select@language {brazil}
+\beamer@sectionintoc {1}{Intro}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Tdd com Android}{3}{0}{1}

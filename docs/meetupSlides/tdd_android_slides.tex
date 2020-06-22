@@ -1,4 +1,4 @@
-% !TeX spellcheck = <brazil>
+%!TeX spellcheck = <brazil>
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Beamer Presentation
 % LaTeX Template
@@ -73,10 +73,12 @@
 
 \begin{document}
 
+%-----------------------------------------------------------------------01
 \begin{frame}
 \titlepage % Print the title page as the first slide
 \end{frame}
 
+%-----------------------------------------------------------------------02
 \begin{frame}
 \frametitle{Overview} 
 \tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
@@ -88,12 +90,12 @@
 
 \subsection{Tdd com Android} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
 
-%------------------------------------------------
+%------------------------------------------------03
 \begin{frame}
 	\frametitle{Como funciona a estrutura de teste no android}
-	Os projetos android criados a partir do Android Studio ja vem com uma estrutura minima para a criação de testes automatizados
+	Os projetos android criados a partir do Android Studio já vem com uma estrutura minima para a criação de testes automatizados
 	\includegraphics[scale=0.5]{test_structure_android}
-	\newline O arquivos são organizados da seguinte maneira
+	\newline Os arquivos são organizados da seguinte maneira
 	\begin{itemize}
 		\item diretório \textbf{main} onde fica todo código "funcional" do projeto
 		\item diretório \textbf{test} onde fica todo código de teste que é executado localmente 
@@ -102,14 +104,14 @@
 	
 \end{frame}
 
-%------------------------------------------------
+%------------------------------------------------04
 \begin{frame}
 	\frametitle{Caixa de ferramentas}
-	Ao se escrever testes de unidade automatizados existe uma serie de ferramentas uteis que auxiliam o workflow de trabalho. Abaixo vamos ver algumas:
+	Ao se escrever testes de unidade automatizados existe uma série de ferramentas úteis que auxiliam o workflow de trabalho. Abaixo vamos ver algumas:
 	\newline 
 	\begin{itemize}
 		\item \href{https://junit.org/junit4/}{\textbf{Junit}} framework xUnit para escrita de testes de unidade
-		\item \href{http://hamcrest.org/}{\textbf{Hamcrest}} biblioteca que permite a ecrita de testes de forma mais idiomatica, torna sua leitura mais facil de pessoas entenderem.
+		\item \href{http://hamcrest.org/}{\textbf{Hamcrest}} biblioteca que permite a escrita de testes de forma mais idiomática, torna sua leitura mais fácil das pessoas entenderem.
 		\item \href{https://developer.android.com/training/testing/set-up-project}
 		{\textbf{AndroidX Test Library}} bibliotecas android que auxiliam na simulação de componentes do ciclo de vida da aplicação, (Context, Activitys, Fragments, etc)
 		
@@ -118,10 +120,10 @@
 	
 \end{frame}
 
-%------------------------------------------------
+%------------------------------------------------05
 \begin{frame} [fragile]
 	\frametitle{Configuração minima}
-	Abaixo podmeos ver qual o aspecto geral de um arquivi \textit{build.gradle} de um projeto orientado a testes.
+	Abaixo podemos ver qual o aspecto geral de um arquivo \textit{build.gradle} de um projeto orientado a testes.
 	\newline 
 	\begin{example}[\textit{build.gradle} default config]
 		\begin{lstlisting}
@@ -140,7 +142,7 @@
 	
 \end{frame}
 
-%------------------------------------------------
+%------------------------------------------------06
 \begin{frame} [fragile]
 	\frametitle{Configuração minima}
 	
@@ -170,28 +172,28 @@
 \end{frame}
 
 
-%------------------------------------------------
+%------------------------------------------------07
 \begin{frame}
 	\frametitle{Caso de Uso: ToDo App}
-	Este é o aplicativo que vamos usar para estudar alguns casos praticos de teste de unidade
+	Este é o aplicativo que vamos usar para estudar alguns casos práticos de teste de unidade
 	\begin{columns}[c]
 		
 		\column{0.1\textwidth} % Left column and width
 		\includegraphics[scale=0.3]{toDoAppSample}
 		\column{0.3\textwidth} % Right column and width
-		Classico aplicativo de lista tarefas, que permite que usuario adicione uma nova tarefa na lista, check aquelas que já foram concluidas, e veja uma estatistica simples de quantas atividades ele ja conclui, e quantas ainda possui na lista.
+		Clássico aplicativo de lista tarefas, que permite que usuário adicione uma nova tarefa na lista, "check" aquelas que já foram concluídas, veja uma estatística simples de quantas atividades ele já concluiu e quantas ainda possui na lista.
 		
 	\end{columns}
 	
 \end{frame}
 
-%---------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------08
 \begin{frame}
 	\frametitle{Escrevendo nosso primeiro teste}
-	O app \textbf{ToDo} tem uma funcinalidade que permite que o usuario tenha uma metrica de quantas tarefas ele terminou e quatas ainda faltam, levando isso em conta, nosso primeiro teste deve verificar que \textbf{Dado} uma lista de tarefas, \textbf{Quando} a lista tem  apenas uma tarefa, e ela não esta completa, \textbf{Então} a porcentagem de tarefas ativas deve ser 100, e a porcentagem de tarefas completas deve ser 0
+	O app \textbf{ToDo} tem uma funcionalidade que permite que o usuário tenha uma métrica de quantas tarefas ele terminou e quantas ainda faltam, levando isso em conta, nosso primeiro teste deve verificar que \textbf{Dado} uma lista de tarefas, \textbf{Quando} a lista tem  apenas uma tarefa e ela não está completa, \textbf{Então} a porcentagem de tarefas ativas deve ser 100 e a porcentagem de tarefas completas deve ser 0
 \end{frame}
 
-%---------------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------09
 \begin{frame}[fragile]
 	\frametitle{Escrevendo nosso primeiro teste}
 		\begin{example}[Escrevendo o teste]
@@ -216,7 +218,7 @@
 	
 \end{frame}
 
-%---------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------10
 \begin{frame}[fragile]
 	\frametitle{Escrevendo nosso primeiro teste}
 	\begin{example}[Escrevendo o codigo funcional]
@@ -236,45 +238,45 @@
 	
 \end{frame}
 
-%------------------------------------------------
+%------------------------------------------------11
 \begin{frame}
 \frametitle{O que é TDD?}
-TDD,(Test Drive Development), é uma prática de desenvolvimento de software que orienta a antes de escrever qualquer código funcional, escrever um coódigo de teste, em seguida escrever o minimo de codigo funcional que faça o teste passar. Então trabalhar esse fluxo de forma incremental em todo o durante todo o processe de desenvolvimento.
+TDD,(Test Drive Development), é uma prática de desenvolvimento de software que orienta a antes de escrever qualquer código funcional, escrever um código de teste, em seguida escrever o minimo de código funcional que faça o teste passar. Então trabalhar esse fluxo de forma incremental durante todo o processo de desenvolvimento.
 \includegraphics[scale=0.15]{tdd_diagram_flow}
  
 \end{frame}
 
-%------------------------------------------------
+%------------------------------------------------12
 \begin{frame}
 	\frametitle{O Jeito de Pensar TDD}
 	Um teste de unidade pode ser escrito em três etapas:
 	\begin{block}{Dado (Given)}
-		Qual é o estado atual? Nesta etapa os dados necessarios para simular o estado atual da aplicação é fornecido.
+		Qual é o estado atual? Nesta etapa os dados necessários para simular o estado atual da aplicação é fornecido.
 	\end{block}
 	
 	\begin{block}{Quando (When)}
-		Quando o estado muda? Nesta etapa o trecho de código, (método, função, procedimento, etc..), que muda o estado é executado.
+		Quando o estado muda? Nesta etapa o trecho de código (método, função, procedimento, etc..), que muda o estado é executado.
 	\end{block}
 	
 	\begin{block}{Então (Then)}
-		A resposta,(saída), esta certa? Nesta etapa é verificado se após o estado inicial ter sido alterado o resultado corresponde ao esperado.
+		A resposta(saída), está certa? Nesta etapa é verificado se após o estado inicial ter sido alterado o resultado corresponde ao esperado.
 	\end{block}
 	
 \end{frame}
 
-%---------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------13
 \begin{frame}
 \frametitle{Caso de Uso: ToDo App}
-Vamos ver um exemplo pratico da abordagem GWT, (Given, When, Then) com o aplicativo ToDo
-\newline \textbf{Cenario de uso:} O usuario tem uma lista de tarefas
+Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplicativo ToDo
+\newline \textbf{Cenário de uso:} O usuário tem uma lista de tarefas
 \begin{itemize}
-\item \textbf{Dado} que usuario possui uma lista de tarefas
-\item \textbf{Quando} a lista de tarefas conter apenas uma tarefa, e ela estiver completa.
-\item \textbf{Então} a porcentagem de tarefas ativas deve ser 0, e porcentagem de tarefas concluidas deve ser 100
+\item \textbf{Dado} que usuário possui uma lista de tarefas
+\item \textbf{Quando} a lista de tarefas houver apenas uma tarefa e ela estiver completa.
+\item \textbf{Então} a porcentagem de tarefas ativas deve ser 0 e a porcentagem de tarefas concluídas deve ser 100
 \end{itemize}
 \end{frame}
 
-%---------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------14
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o teste]
@@ -295,7 +297,7 @@ Vamos ver um exemplo pratico da abordagem GWT, (Given, When, Then) com o aplicat
 	\end{example}
 \end{frame}
 
-%---------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------15
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o codigo funcional]
@@ -317,18 +319,18 @@ Vamos ver um exemplo pratico da abordagem GWT, (Given, When, Then) com o aplicat
 	\end{example}
 \end{frame}
 
-%---------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------16
 \begin{frame}
 	\frametitle{Caso de Uso: ToDo App}
-	Cenario de Bug: Temos uma lista nula ou vazia
+	Cenário de Bug: Temos uma lista nula ou vazia
 	\begin{itemize}
 		\item \textbf{Dado} que uma lista nula ou vazia é enviada
 		\item \textbf{Quando} a lista de tarefas for processada.
-		\item \textbf{Então} a porcentagem de tarefas ativas e concluidas deve ser 0
+		\item \textbf{Então} a porcentagem de tarefas ativas e concluídas deve ser 0
 	\end{itemize}
 \end{frame}
 
-%-----------------------------------------------------------------------------------------
+%--------------------------------------------------------------------------------17
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o teste]
@@ -349,7 +351,7 @@ Vamos ver um exemplo pratico da abordagem GWT, (Given, When, Then) com o aplicat
 	\end{example}
 \end{frame}
 
-%-----------------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------18
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o codigo funcional]
@@ -372,7 +374,7 @@ Vamos ver um exemplo pratico da abordagem GWT, (Given, When, Then) com o aplicat
 	\end{example}
 \end{frame}
 
-%------------------------------------------------
+%------------------------------------------------19
 \begin{frame}
 \frametitle{References}
 \footnotesize{
@@ -384,7 +386,7 @@ Vamos ver um exemplo pratico da abordagem GWT, (Given, When, Then) com o aplicat
 }
 \end{frame}
 
-%------------------------------------------------
+%------------------------------------------------20
 
 \begin{frame}
 \Huge{\centerline{The End}}

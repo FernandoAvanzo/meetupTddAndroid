@@ -63,7 +63,7 @@
 %----------------------------------------------------------------------------------------
 
 \title[TDD com Android]{Introdução A Testes de Unidade em Aplicativos Android} 
-\author{Fernando Avanzo} % Your name
+\author{Fernando Avanzo}
 \institute[] 
 { % Your institution for the title page
 \medskip
@@ -75,22 +75,36 @@
 
 %-----------------------------------------------------------------------01
 \begin{frame}
-\titlepage % Print the title page as the first slide
+	\titlepage % Print the title page as the first slide
 \end{frame}
 
 %-----------------------------------------------------------------------02
 \begin{frame}
-\frametitle{Overview} 
-\tableofcontents % Throughout your presentation, if you choose to use \section{} and \subsection{} commands, these will automatically be printed on this slide as an overview of your presentation
+	\frametitle{Apresentação}
+	\begin{itemize}
+		\item Fernando Avanzo 
+		\begin{itemize}
+			\item Engenheiro de Software na Cinq/Dextra
+			\item Bacharel em Informática pela Universidade Estadual de Maringá
+			\item Desde 2010 trabalhando com desenvolvimento de sistemas.
+		\end{itemize}
+		\item Redes Sociais
+		\begin{itemize}
+			\item Github: \textit{https://github.com/FernandoAvanzo}
+			\item LinkedIn: \textit{https://www.linkedin.com/in/fernandoavanzo/}
+		\end{itemize}
+	\end{itemize}
 \end{frame}
 
-%------------------------------------------------
-\section{Intro} % Sections can be created in order to organize your presentation into discrete blocks, all sections and subsections are automatically printed in the table of contents as an overview of the talk
-%------------------------------------------------
+%-----------------------------------------------------------------------03
+\section{O que vamos ver hoje}
+\begin{frame}
+	\frametitle{Introdução} 
+	\tableofcontents 
+\end{frame}
 
-\subsection{Tdd com Android} % A subsection can be created just before a set of slides with a common theme to further break down your presentation into chunks
-
-%------------------------------------------------03
+%------------------------------------------------04
+\subsection{Como funciona a estrutura de teste no android}
 \begin{frame}
 	\frametitle{Como funciona a estrutura de teste no android}
 	Os projetos android criados a partir do Android Studio já vem com uma estrutura minima para a criação de testes automatizados
@@ -104,7 +118,8 @@
 	
 \end{frame}
 
-%------------------------------------------------04
+%------------------------------------------------05
+\subsection{Caixa de ferramentas}
 \begin{frame}
 	\frametitle{Caixa de ferramentas}
 	Ao se escrever testes de unidade automatizados existe uma série de ferramentas úteis que auxiliam o workflow de trabalho. Abaixo vamos ver algumas:
@@ -120,7 +135,8 @@
 	
 \end{frame}
 
-%------------------------------------------------05
+%------------------------------------------------06
+\subsection{Configuração minima}
 \begin{frame} [fragile]
 	\frametitle{Configuração minima}
 	Abaixo podemos ver qual o aspecto geral de um arquivo \textit{build.gradle} de um projeto orientado a testes.
@@ -142,7 +158,7 @@
 	
 \end{frame}
 
-%------------------------------------------------06
+%------------------------------------------------07
 \begin{frame} [fragile]
 	\frametitle{Configuração minima}
 	
@@ -172,7 +188,8 @@
 \end{frame}
 
 
-%------------------------------------------------07
+%------------------------------------------------08
+\subsection{Caso de Uso: ToDo App}
 \begin{frame}
 	\frametitle{Caso de Uso: ToDo App}
 	Este é o aplicativo que vamos usar para estudar alguns casos práticos de teste de unidade
@@ -187,13 +204,14 @@
 	
 \end{frame}
 
-%---------------------------------------------------------------------------------08
+%---------------------------------------------------------------------------------09
+\subsection{Escrendo testes de unidade}
 \begin{frame}
 	\frametitle{Escrevendo nosso primeiro teste}
 	O app \textbf{ToDo} tem uma funcionalidade que permite que o usuário tenha uma métrica de quantas tarefas ele terminou e quantas ainda faltam, levando isso em conta, nosso primeiro teste deve verificar que \textbf{Dado} uma lista de tarefas, \textbf{Quando} a lista tem  apenas uma tarefa e ela não está completa, \textbf{Então} a porcentagem de tarefas ativas deve ser 100 e a porcentagem de tarefas completas deve ser 0
 \end{frame}
 
-%-----------------------------------------------------------------------------09
+%-----------------------------------------------------------------------------10
 \begin{frame}[fragile]
 	\frametitle{Escrevendo nosso primeiro teste}
 		\begin{example}[Escrevendo o teste]
@@ -218,7 +236,7 @@
 	
 \end{frame}
 
-%--------------------------------------------------------------------------------10
+%--------------------------------------------------------------------------------11
 \begin{frame}[fragile]
 	\frametitle{Escrevendo nosso primeiro teste}
 	\begin{example}[Escrevendo o codigo funcional]
@@ -238,7 +256,7 @@
 	
 \end{frame}
 
-%------------------------------------------------11
+%------------------------------------------------12
 \begin{frame}
 \frametitle{O que é TDD?}
 TDD,(Test Drive Development), é uma prática de desenvolvimento de software que orienta a antes de escrever qualquer código funcional, escrever um código de teste, em seguida escrever o minimo de código funcional que faça o teste passar. Então trabalhar esse fluxo de forma incremental durante todo o processo de desenvolvimento.
@@ -246,7 +264,7 @@ TDD,(Test Drive Development), é uma prática de desenvolvimento de software que
  
 \end{frame}
 
-%------------------------------------------------12
+%------------------------------------------------13
 \begin{frame}
 	\frametitle{O Jeito de Pensar TDD}
 	Um teste de unidade pode ser escrito em três etapas:
@@ -264,7 +282,7 @@ TDD,(Test Drive Development), é uma prática de desenvolvimento de software que
 	
 \end{frame}
 
-%---------------------------------------------------------------------------------13
+%---------------------------------------------------------------------------------14
 \begin{frame}
 \frametitle{Caso de Uso: ToDo App}
 Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplicativo ToDo
@@ -276,7 +294,7 @@ Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplica
 \end{itemize}
 \end{frame}
 
-%---------------------------------------------------------------------------------14
+%---------------------------------------------------------------------------------15
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o teste]
@@ -297,7 +315,7 @@ Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplica
 	\end{example}
 \end{frame}
 
-%---------------------------------------------------------------------------------15
+%---------------------------------------------------------------------------------16
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o codigo funcional]
@@ -319,7 +337,7 @@ Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplica
 	\end{example}
 \end{frame}
 
-%---------------------------------------------------------------------------------16
+%---------------------------------------------------------------------------------17
 \begin{frame}
 	\frametitle{Caso de Uso: ToDo App}
 	Cenário de Bug: Temos uma lista nula ou vazia
@@ -330,7 +348,7 @@ Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplica
 	\end{itemize}
 \end{frame}
 
-%--------------------------------------------------------------------------------17
+%--------------------------------------------------------------------------------18
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o teste]
@@ -351,7 +369,7 @@ Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplica
 	\end{example}
 \end{frame}
 
-%---------------------------------------------------------------------------------18
+%---------------------------------------------------------------------------------19
 \begin{frame}[fragile]
 	\frametitle{Caso de Uso: ToDo App}
 	\begin{example}[Escrevendo o codigo funcional]
@@ -374,19 +392,19 @@ Vamos ver um exemplo prático da abordagem GWT, (Given, When, Then) com o aplica
 	\end{example}
 \end{frame}
 
-%------------------------------------------------19
+%------------------------------------------------20
 \begin{frame}
-\frametitle{References}
+\frametitle{Referências}
 \footnotesize{
 \begin{thebibliography}{99} % Beamer does not support BibTeX so references must be inserted manually as below
-\bibitem[Smith, 2012]{p1} John Smith (2012)
-\newblock Title of the publication
-\newblock \emph{Journal Name} 12(3), 45 -- 678.
+\bibitem[Code Labs, 2020]{p1} Code Labs Google (2020)
+\newblock \href{https://codelabs.developers.google.com/codelabs/advanced-android-kotlin-training-testing-basics/}
+{\textbf{Advanced Android in Kotlin 05.1: Testing Basics}}
 \end{thebibliography}
 }
 \end{frame}
 
-%------------------------------------------------20
+%------------------------------------------------21
 
 \begin{frame}
 \Huge{\centerline{The End}}

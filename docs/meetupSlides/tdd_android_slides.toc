@@ -1,3 +1,7 @@
 \select@language {brazil}
-\beamer@sectionintoc {1}{Intro}{3}{0}{1}
-\beamer@subsectionintoc {1}{1}{Tdd com Android}{3}{0}{1}
+\beamer@sectionintoc {1}{O que vamos ver hoje}{3}{0}{1}
+\beamer@subsectionintoc {1}{1}{Como funciona a estrutura de teste no android}{4}{0}{1}
+\beamer@subsectionintoc {1}{2}{Caixa de ferramentas}{5}{0}{1}
+\beamer@subsectionintoc {1}{3}{Configura\IeC {\c c}\IeC {\~a}o minima}{6}{0}{1}
+\beamer@subsectionintoc {1}{4}{Caso de Uso: ToDo App}{8}{0}{1}
+\beamer@subsectionintoc {1}{5}{Escrendo testes de unidade}{9}{0}{1}
